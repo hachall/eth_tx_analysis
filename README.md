@@ -22,3 +22,5 @@ Or run eth/tx_by_neighborhood.ipynb to gather a focused set of transactions arou
 The EOS transactions and labels come from a private dataset of ERC20 token transfers, available on request.
 
 ### Toolkit
+
+This toolkit demonstrates how to ingest transaction lists, extract nodes and build corresponding graphs. These can then be fed into DGL or Pytorch Geometric GNNs to train for downstream classification tasks. These trained models can then be analysed to observe the nature of their predictions using visualisation tools and GNNExplainer. The latter returns edge and feature masks for the prediction of a given node, highlighting what influenced the model as such. These can be visualised to gain insight into the subtle patterns (in features and connections) of the transaction graphs.
